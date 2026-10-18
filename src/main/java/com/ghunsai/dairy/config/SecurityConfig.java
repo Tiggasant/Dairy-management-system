@@ -1,6 +1,7 @@
 package com.ghunsai.dairy.config;
 
 import com.ghunsai.dairy.security.JsonSecurityHandlers;
+import org.springframework.beans.factory.annotation.Qualifier;
 import com.ghunsai.dairy.security.JwtAuthConverter;
 import com.nimbusds.jose.jwk.source.ImmutableSecret;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
