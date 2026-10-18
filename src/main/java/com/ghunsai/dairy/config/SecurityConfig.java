@@ -55,6 +55,7 @@ public class SecurityConfig {
                                             JwtDecoder jwtDecoder,
                                             JwtAuthConverter jwtAuthConverter,
                                             JsonSecurityHandlers handlers,
+                                            @Qualifier("corsConfigurationSource")
                                             CorsConfigurationSource corsSource) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
